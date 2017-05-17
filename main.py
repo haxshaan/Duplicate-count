@@ -23,7 +23,19 @@ def duplicate_count(text):
     elif len(dup) == 2:
         print '%s and %s' %(dup[0], dup[1])
 
-    else:
-        print 'More than 2 duplicate characters found'
+    elif len(dup) == 3:
+        print '%s, %s and %s' %(dup[0], dup[1], dup[2])
 
-duplicate_count("indivisibility")
+    elif len(dup) == 4:
+        print '%s, %s, %s and %s' %(dup[0], dup[1], dup[2], dup[3])
+
+    elif len(dup) == 5:
+        print '%s, %s, %s, %s and %s' %(dup[0], dup[1], dup[2], dup[3], dup[4])
+
+    elif len(dup) == 6:
+        print '%s, %s, %s, %s, %s and %s' %(dup[0], dup[1], dup[2], dup[3], dup[4], dup[5])
+
+    elif len(dup) == 7:
+        print '%s, %s, %s, %s, %s, %s and %s' %(dup[0], dup[1], dup[2], dup[3], dup[4], dup[5], dup[6])
+    else:
+        print 'More than 8 duplicate characters found'
